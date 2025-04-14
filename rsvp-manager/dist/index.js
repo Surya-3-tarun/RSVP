@@ -1,0 +1,14 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const RsvpService_1 = require("./services/RsvpService");
+const Logger_1 = require("./utils/Logger");
+const logger = new Logger_1.Logger();
+const rsvpService = new RsvpService_1.RsvpService(logger);
+const tarun = { id: "1", name: "Tarun" };
+const rohan = { id: "2", name: "Rohan" };
+const nitin = { id: "3", name: "nitin" };
+rsvpService.addOrUpdateRsvp(tarun, "Yes");
+rsvpService.addOrUpdateRsvp(rohan, "No");
+rsvpService.addOrUpdateRsvp(nitin, "Maybe");
+console.log("Confirmed attendees:", rsvpService.getConfirmedAttendees());
+console.log("RSVP counts:", rsvpService.countRsvpStatuses());
