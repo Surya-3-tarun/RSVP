@@ -38,22 +38,7 @@ RSVP status options are: `"Yes"`, `"No"`, or `"Maybe"`
 
 ## Project Structure
 
-rsvp-manager/
-├── src/
-│   ├── interfaces/
-│   │   └── types.ts             # Type definitions: Player, RsvpEntry, RsvpStatus
-│   ├── services/
-│   │   ├── RsvpService.ts       # Core RSVP logic (add, update, count, get confirmed)
-│   │   └── RsvpService.test.ts  # Unit tests using Vitest
-│   ├── utils/
-│   │   └── Logger.ts            # Simple injectable logger
-│   └── index.ts                 # Sample usage of RsvpService
-├── dist/                        # (Generated) Compiled JavaScript output
-├── node_modules/                # (Generated) Installed dependencies
-├── package.json                 # Project dependencies and scripts
-├── tsconfig.json                # TypeScript configuration
-└── README.md                    # Project overview and instructions
-
+<pre> rsvp-manager/ ├── src/ │ ├── interfaces/ │ │ └── types.ts # Type definitions: Player, RsvpEntry, RsvpStatus │ ├── services/ │ │ ├── RsvpService.ts # Core RSVP logic (add, update, count, get confirmed) │ │ └── RsvpService.test.ts # Unit tests using Vitest │ ├── utils/ │ │ └── Logger.ts # Simple injectable logger │ └── index.ts # Sample usage of RsvpService ├── dist/ # (Generated) Compiled JavaScript output ├── node_modules/ # (Generated) Installed dependencies ├── package.json # Project dependencies and scripts ├── tsconfig.json # TypeScript configuration └── README.md # Project overview and instructions </pre>
 
 
 ---
