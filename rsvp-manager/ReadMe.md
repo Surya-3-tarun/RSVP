@@ -4,7 +4,6 @@ This project is a small, modular RSVP management service built as part of the Ga
 
 ## Challenge Overview
 
-> “You’ve been asked to build a small, focused module that helps manage RSVP responses for an event. This feature would be integrated into our platform — so we want to see clean, testable, and scalable code that could realistically be part of our app.”
 
 Based on the challenge description, this service:
 
